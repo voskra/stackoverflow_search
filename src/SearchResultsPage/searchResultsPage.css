@@ -1,0 +1,40 @@
+.SearchResults__error {
+    color: red;
+}
+
+.SearchInfo {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: -50%;
+    transition: all 0.5s;
+    width: 50%;
+    height: 100vh;
+    background: #ffffff;
+    border: 1px solid;
+}
+
+.SearchInfo.opened {
+    left: 0;
+}
+
+.SearchInfo__button {
+    font-size: 30px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    color: #000000;
+    transition: all 280ms ease-in-out;
+}
+
+.SearchLink, .SearchLink:focus {
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: underline;
+    outline: none;
+}
